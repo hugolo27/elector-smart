@@ -1,0 +1,27 @@
+@import 'src/assets/stylesheets/variables_/palette';
+@import 'src/assets/stylesheets/mixins/responsive';
+
+.header__ {
+  &container__ {
+    height: 64px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $theme-main;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    &menu-toggle, &user-toggle {
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

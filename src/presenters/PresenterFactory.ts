@@ -1,5 +1,6 @@
 import {LoginPagePresenter, LoginView} from "./LoginPagePresenter";
 import {Provider} from "../core/Provider";
+import {HomePagePresenter, HomeView} from "./HomePagePresenter";
 
 
 export class PresenterFactory {
@@ -9,5 +10,8 @@ export class PresenterFactory {
             view,
             Provider.login(),
         );
+
+    homePage = (view: HomeView): HomePagePresenter =>
+        new HomePagePresenter(view);
 
 }

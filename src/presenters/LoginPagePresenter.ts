@@ -1,14 +1,7 @@
 import {Login} from "../core/useCases/Login";
+import {BaseView} from "./BaseView";
 
-export interface LoginView {
-    showLoader(): void;
-
-    hideLoader(): void;
-
-    showErrorMessage(message: string): void;
-
-    navigateToNewPath(path: string): void;
-}
+export interface LoginView extends BaseView {}
 
 export class LoginPagePresenter {
     private view: LoginView;
@@ -23,6 +16,7 @@ export class LoginPagePresenter {
     }
 
     doLogin = async(email: string, password: string) => {
-        await this.login.execute(email, password);
+        // await this.login.execute(email, password);
+        this.view.navigateToNewPath('/');
     }
 }

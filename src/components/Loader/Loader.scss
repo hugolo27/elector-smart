@@ -1,0 +1,25 @@
+@import 'src/assets/stylesheets/variables_/palette';
+@import 'src/assets/stylesheets/mixins/responsive';
+
+.ui.loader:after {
+  border-color: $theme-main transparent transparent !important;
+}
+
+.loader__ {
+  &background__ {
+    background-color: $slate-gray-transparent;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &foreground__ {
+
+  }
+}

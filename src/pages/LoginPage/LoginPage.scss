@@ -6,6 +6,8 @@
   &container__ {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 
     &inner__ {
       width: 370px;
@@ -13,7 +15,6 @@
       background-color: $white;
       box-shadow: 0 40px 120px 0 $slate-grey;
       padding: 20px 0;
-      margin-top: 25px;
 
       &main__ {
         border-top: 1px solid $white-70;
@@ -26,8 +27,8 @@
 
         &logo {
           margin-bottom: 5px;
-          width: 250px;
-          height: 100px;
+          width: 240px;
+          height: 90px;
         }
 
         &form {

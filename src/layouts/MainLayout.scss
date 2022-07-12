@@ -1,0 +1,8 @@
+@import 'src/assets/stylesheets/variables_/palette';
+@import 'src/assets/stylesheets/mixins/responsive';
+
+.main-layout__ {
+  &container__ {
+    padding-top: 64px;
+  }
+}

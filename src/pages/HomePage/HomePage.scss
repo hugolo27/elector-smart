@@ -1,0 +1,18 @@
+@import 'src/assets/stylesheets/variables_/palette';
+@import 'src/assets/stylesheets/mixins/responsive';
+
+.home-page__ {
+
+  &container__ {
+
+    &title {
+      background-color: $dark-bg;
+      width: 100%;
+      display: block;
+      font-size: 32px;
+      color: $white;
+      padding: 35px 40px;
+      font-family: Serif, sans-serif;
+    }
+  }
+}
